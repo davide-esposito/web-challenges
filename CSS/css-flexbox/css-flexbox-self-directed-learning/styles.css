@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container{
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    gap: .625rem;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.section{
+    border-radius: 5px;
+}
+
+main{
+    background-color: yellow;
+}
+
+header{
+    background-color: red;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+section{
+    background-color: green;
+}
+
+section.one{
+    background-color: blue;
+    height: 200px;
+}
+
+aside{
+    background-color: rgb(18, 66, 66);
+    width: 500px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin: 10px 0;
+}
