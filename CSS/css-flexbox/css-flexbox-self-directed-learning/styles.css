@@ -19,6 +19,7 @@ body{
 
 .section{
     border-radius: 5px;
+    height: 150px;
 }
 
 main{
@@ -37,7 +38,7 @@ section{
 
 section.one{
     background-color: blue;
-    height: 200px;
+    height: 250px;
 }
 
 aside{
