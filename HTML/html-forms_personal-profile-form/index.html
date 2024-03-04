@@ -18,10 +18,13 @@
         </p>
         <fieldset>
           <legend>Personal Information</legend>
+
           <label for="first-name">First Name:</label>
           <input type="text" id="first-name" name="first-name" />
+
           <label for="last-name">Last Name:</label>
           <input type="text" id="last-name" name="last-name" />
+
           <label for="birthday">Your Birthday:</label>
           <input type="date" id="birthday" name="birthday" />
         </fieldset>
@@ -31,9 +34,11 @@
         </p>
         <fieldset>
           <legend>Further Information</legend>
+
           <label for="color">Favourite Color:</label>
-          <input type="color" name="color" id="color" />
-          <label for="pet">What your favourite pet?</label>
+          <input type="color" name="color" id="color" value="#E5430F" />
+
+          <label for="pet">What is your favourite pet?</label>
           <select name="pet" id="pet">
             <option value="">--Please choose an option--</option>
             <option value="dog">Dog</option>
@@ -41,7 +46,50 @@
             <option value="Bird">Bird</option>
           </select>
         </fieldset>
+
         <button type="submit">Submit</button>
+
+        <input
+          type="checkbox"
+          name="accept-data-privacy"
+          id="accept-data-privacy"
+        />
+        <label for="accept-data-privacy"
+          >I accept the data privacy agreement
+        </label>
+
+        <input
+          type="checkbox"
+          name="accept-terms-conditions"
+          id="accept-terms-conditions"
+        />
+        <label for="accept-terms-conditions"
+          >I accept the terms and conditions
+        </label>
+
+        <input
+          type="radio"
+          name="billing-plan"
+          id="billing-plan-weekly"
+          value="weekly"
+        />
+        <label for="billing-plan-weekly">Weekly billing</label>
+
+        <input
+          type="radio"
+          name="billing-plan"
+          id="billing-plan-monthly"
+          value="monthly"
+        />
+        <label for="billing-plan-monthly">Monthly billing</label>
+
+        <input
+          type="radio"
+          name="billing-plan"
+          id="billing-plan-yearly"
+          value="yearly"
+        />
+        <label for="billing-plan-yearly">Yearly billing</label>
       </form>
     </section>
   </body>
