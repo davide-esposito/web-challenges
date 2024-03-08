@@ -36,8 +36,24 @@ secondProductElement.innerHTML = `
 
 document.body.appendChild(secondProductElement);
 
-secondProductElement
-  .querySelector(".product__buy-button")
-  .addEventListener("click", () => {
-    console.log(`Product ${name} purchased for ${price}`);
+const buyButtons = document.querySelectorAll(".product__buy-button");
+
+buyButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const productName =
+      button.parentElement.parentElement.querySelector(
+        ".product__name"
+      ).textContent;
+    const productPrice =
+      button.parentElement.parentElement.parentElement.querySelector(
+        ".product__price"
+      ).textContent;
+    console.log(`Product ${productName} purchased for ${productPrice}`);
   });
+});
+
+// secondProductElement
+//   .querySelector(".product__buy-button")
+//   .addEventListener("click", () => {
+//     console.log(`Product ${name} purchased for ${price}`);
+//   });
