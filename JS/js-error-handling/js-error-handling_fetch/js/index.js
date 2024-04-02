@@ -7,13 +7,13 @@ async function getUser(url) {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      throw new error("Problem fetching the User");
+      throw new Error("Problem fetching the User");
     }
     const json = await response.json();
     errorElement.innerText = "";
     return json.data;
   } catch (error) {
-    errorElement.innerText = "Failed to find User";
+    errorElement.innerText = error.message;
     userElement.innerHTML = "";
   }
 }
