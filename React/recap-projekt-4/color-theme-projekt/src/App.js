@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./Header/Header.js";
-import ThemeDisplay from "./ThemeDisplay/ThemeDisplay.js";
+import Themes from "./Themes/Themes.js";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
         <Header />
       </header>
       <main className="main-container">
-        <ThemeDisplay />
+        <Themes />
       </main>
     </>
   );

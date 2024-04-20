@@ -1,3 +1,5 @@
+import "./ColorCard.css";
+
 export default function ColorCard({ color }) {
   return (
     <article className="color-card">

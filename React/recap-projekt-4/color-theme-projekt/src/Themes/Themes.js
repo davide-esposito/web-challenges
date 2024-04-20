@@ -1,7 +1,8 @@
+import "./Themes.css";
 import { themes } from "../db";
 import ThemeCard from "../ThemeCard/ThemeCard";
 
-export default function ThemeDisplay() {
+export default function Themes() {
   return (
     <>
       {themes.map((theme) => (

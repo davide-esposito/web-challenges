@@ -1,8 +1,1 @@
-@import url(ColorCard/ColorCard.css);
-@import url(index.css);
-@import url(Header/Header.css);
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
