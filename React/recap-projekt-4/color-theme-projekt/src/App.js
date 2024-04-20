@@ -1,23 +1,16 @@
-import './App.css';
+import "./App.css";
+import Header from "./Header/Header.js";
+import Themes from "./Themes/Themes.js";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <Header />
       </header>
-    </div>
+      <main className="main-container">
+        <Themes />
+      </main>
+    </>
   );
 }
-
-export default App;
