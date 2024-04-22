@@ -1,6 +1,7 @@
 import "./App.css";
-import Header from "./Header/Header.js";
-import Themes from "./Themes/Themes.js";
+import Header from "./components/Header/Header.js";
+import Theme from "./components/Theme/Theme.js";
+import { themes } from "./db.js";
 
 export default function App() {
   return (
@@ -9,7 +10,9 @@ export default function App() {
         <Header />
       </header>
       <main className="main-container">
-        <Themes />
+        {themes.map((theme) => (
+          <Theme key={theme.id} theme={theme} name={theme.name} />
+        ))}
       </main>
     </>
   );
