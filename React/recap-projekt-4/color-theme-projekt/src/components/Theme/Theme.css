@@ -1,0 +1,19 @@
+.theme {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.theme__title {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.theme__detail-toggle-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
