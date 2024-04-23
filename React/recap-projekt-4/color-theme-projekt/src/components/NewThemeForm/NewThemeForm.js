@@ -28,6 +28,7 @@ export default function NewThemeForm({ onSubmit }) {
     };
 
     onSubmit(newTheme);
+    event.target.reset();
   }
 
   return (

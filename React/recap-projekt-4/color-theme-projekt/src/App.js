@@ -14,6 +14,11 @@ export default function App() {
     setThemes([newThemeWithId, ...themes]);
   }
 
+  function handleDeleteTheme(id) {
+    const modifiedThemes = themes.filter((theme) => theme.id !== id);
+    setThemes(modifiedThemes);
+  }
+
   return (
     <>
       <header className="header">
@@ -22,7 +27,12 @@ export default function App() {
       <main className="main-container">
         <NewThemeForm onSubmit={handleAddTheme} />
         {themes.map((theme) => (
-          <Theme key={theme.id} theme={theme} name={theme.name} />
+          <Theme
+            key={theme.id}
+            theme={theme}
+            name={theme.name}
+            onDelete={handleDeleteTheme}
+          />
         ))}
       </main>
     </>

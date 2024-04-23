@@ -4,7 +4,7 @@ import ThemePreview from "../ThemePreview/ThemePreview";
 import { useState } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 
-export default function Theme({ name, theme }) {
+export default function Theme({ name, theme, onDelete }) {
   const [showDetail, setShowDetail] = useState(false);
 
   function toggleDetailView() {
@@ -25,7 +25,7 @@ export default function Theme({ name, theme }) {
         )}
       </button>
       {showDetail ? (
-        <ThemeDetail theme={theme} />
+        <ThemeDetail theme={theme} onDelete={onDelete} />
       ) : (
         <ThemePreview theme={theme} />
       )}
