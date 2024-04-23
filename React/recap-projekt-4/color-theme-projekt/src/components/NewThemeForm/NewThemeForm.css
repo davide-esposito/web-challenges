@@ -17,16 +17,16 @@
   margin: 0.625rem 0;
 }
 
-.theme-form__name-input input{
-    background-color: #eeeeff;
-    padding: .3125rem;
-    border: 1px solid grey;
-    box-shadow: 2px 2px 3px grey;
+.theme-form__name-input input {
+  background-color: #eeeeff;
+  padding: 0.3125rem;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 3px grey;
 }
 
-.theme-form__name-input label{
-    font-size: 1.125rem;
-    margin-right: .3125rem;
+.theme-form__name-input label {
+  font-size: 1.125rem;
+  margin-right: 0.3125rem;
 }
 
 .theme-form__color-inputs {
@@ -45,15 +45,16 @@
 }
 
 .theme-form__color-inputs label {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .theme-form__submit-button {
-    border: none;
+  border: none;
   background-color: black;
   color: white;
   font-size: 16px;
+  font-weight: bold;
   margin: 0.625rem 0;
-  padding: .625rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   box-shadow: 2px 2px 3px grey;
 }
