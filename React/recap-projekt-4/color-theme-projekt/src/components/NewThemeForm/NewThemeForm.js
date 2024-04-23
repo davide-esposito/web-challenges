@@ -46,11 +46,10 @@ export default function NewThemeForm({ onSubmit }) {
       </div>
       <fieldset className="theme-form__color-inputs">
         {initialData.colors.map((color) => (
-          <div>
+          <div key={color.role}>
             <label htmlFor={color.role}>{color.role}:</label>
 
             <input
-              key={color.role}
               className="theme-form__color-input"
               type="color"
               name={color.role}
