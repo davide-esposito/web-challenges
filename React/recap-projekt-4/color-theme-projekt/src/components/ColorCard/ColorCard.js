@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ColorCard.css";
 
 export default function ColorCard({ color }) {
-  const [apiColorName, setApiColorName] = useState();
+  const [apiColorName, setApiColorName] = useState("");
   useEffect(() => {
     async function getColorName() {
       const cleanHexValue = color.value.replace("#", "");
