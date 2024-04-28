@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 
 export default function Theme({ theme, onDelete, onEdit }) {
-  const [showDetails, setShowDetails] = useState("false");
+  const [showDetails, setShowDetails] = useState(true);
 
   function handleToggleView() {
     setShowDetails(!showDetails);

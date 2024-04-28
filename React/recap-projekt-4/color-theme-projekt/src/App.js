@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header.js";
 import Theme from "./components/Theme/Theme.js";
 import { themes as initialThemes } from "./db.js";
-import NewThemeForm from "./components/ThemeForm/ThemeForm.js";
+import ThemeForm from "./components/ThemeForm/ThemeForm.js";
 import { v4 as uuid } from "uuid";
 import useLocalStorageState from "use-local-storage-state";
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ export default function App() {
         <Header />
       </header>
       <main className="main-container">
-        <NewThemeForm onAdd={handleAddTheme} />
+        <ThemeForm onAdd={handleAddTheme} />
         {themes.map((theme) => (
           <Theme
             key={theme.id}
