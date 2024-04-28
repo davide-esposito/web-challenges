@@ -23,3 +23,16 @@
   cursor: pointer;
   width: 100%;
 }
+
+.detail-theme__try-out-button {
+  border: none;
+  background-color: rgb(71, 109, 71);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.625rem 1.25rem;
+  margin-bottom: 16px;
+  box-shadow: 2px 2px 3px grey;
+  cursor: pointer;
+  width: 100%;
+}

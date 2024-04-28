@@ -10,7 +10,7 @@ const initialTheme = {
   ],
 };
 
-export default function NewThemeForm({
+export default function ThemeForm({
   onAdd,
   initialData = initialTheme,
   isEditMode,
