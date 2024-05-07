@@ -1,6 +1,9 @@
 import Link from "next/link";
 import GlobalStyle from "../styles";
 import styled from "styled-components";
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({ subsets: ["latin"], weight: ["600"] });
 
 const StyledNav = styled.nav`
   border-bottom: solid 2px grey;
@@ -14,6 +17,7 @@ const StyledList = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
+  font-family: ${caveat.style.fontFamily};
   text-decoration: none;
   color: black;
   &:hover {
