@@ -1,6 +1,7 @@
 import GlobalStyle from "../styles";
 import Layout from "../components/Layout";
 import { useState } from "react";
+import useLightControlStore from "@/globalStore";
 
 export default function App({ Component, pageProps }) {
   const [lights, setLights] = useState([
@@ -30,10 +31,10 @@ export default function App({ Component, pageProps }) {
     );
   }
 
-  const allOff = lights.every((light) => !light.isOn);
+  const { checkAllOff } = useLightControlStore();
 
   return (
-    <Layout isDimmed={allOff}>
+    <Layout isDimmed={checkAllOff(lights)}>
       <GlobalStyle />
       <Component
         {...pageProps}
